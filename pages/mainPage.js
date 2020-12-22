@@ -6,7 +6,7 @@ module.exports = {
   showMoreButton: {css: '#show_more_btn'},
   searchIcon: {css: '.toolbar-search__btn'},
   searchField: {css: '#header_search_bar'},
-  searchShowAllResults: {xpath: 'li.search_for'}
+  searchShowAllResults: {xpath: '//a[contains(@href, "/en/expert")]'}
  },
 
   topicsMenuLocators: {

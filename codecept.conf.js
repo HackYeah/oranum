@@ -1,9 +1,10 @@
 exports.config = {
   output: './output',
   helpers: {
-    WebDriver: {
+    Playwright: {
       url: 'https://www.oranum.com',
-      browser: 'chrome'
+      show: true,
+      browser: 'chromium'
     }
   },
   include: {

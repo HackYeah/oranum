@@ -23,8 +23,9 @@ Given("I am on the psychic's page", () => {
   });
   
   Then("I see 'Sign up' overlay", async() => {
- // let assert = require('assert');
-    I.seeElement('//*[@id="video-container"]/div[6]/div[7]/div/h3');
-    let ans = await I.grabTextFrom('//*[@id="video-container"]/div[6]/div[7]/div/h3');
+    var assert = require('assert');
+    I.wait(2);
+    I.seeElement(livestreamPage.signUpOverlay);
+    let ans = await I.grabTextFrom(livestreamPage.signUpOverlay);
     assert(ans, 'Sign up');
   });
